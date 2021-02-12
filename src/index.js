@@ -40,7 +40,7 @@ app.post('/memes', async (req, res) => {
     })
     try{
         await meme.save();
-        res.redirect('http://127.0.0.1:5500/xmeme_front-end/index.html');
+        res.redirect('https://martin04-xmeme.netlify.app');
     }catch(error){
         res.send(error)
     }
